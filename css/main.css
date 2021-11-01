@@ -87,6 +87,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+   @font-face {
+    font-family: 'heart_breaking_badregular';
+    src: url('heart_breaking_bad-webfont.woff2') format('woff2'),
+         url('heart_breaking_bad-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
    .footer {
     position: absolute;
     bottom: 0;
@@ -96,7 +106,9 @@ textarea {
     color: #FFFFFF;
   }
 
-
+  .navbar-brand {
+    font-family: 'heart_breaking_badregular';
+  }
 
 
 
