@@ -89,9 +89,9 @@ textarea {
 
 
    @font-face {
-    font-family: 'heart_breaking_badregular';
-    src: url('font/heart_breaking_bad-webfont.woff2') format('woff2'),
-         url('font/heart_breaking_bad-webfont.woff') format('woff');
+    font-family: 'heart';
+    src: url('../font/heart_breaking_bad-webfont.woff2') format('woff2'),
+         url('../font/heart_breaking_bad-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -107,9 +107,17 @@ textarea {
   }
 
   .navbar-brand {
-    font-family: 'heart_breaking_badregular';
+    font-family: 'heart';
+    font-size: 4rem !important;
   }
 
+  .navbar, .footer {
+    background: rgb(12,68,57);
+    background: linear-gradient(90deg, rgba(12,68,57,1) 0%, rgba(0,105,32,1) 100%);
+  }
+.footer {
+
+}
 
 
 
