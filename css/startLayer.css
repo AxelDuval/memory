@@ -1,0 +1,53 @@
+#rules {
+    position: fixed;
+    top: 0%;
+    height: 100vh;
+    width: 100%;
+    background-color : rgba(0,0,0,0.4);
+    z-index: 10000;
+  }
+  
+  #toRead {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(12,68,57,1) 0%, rgba(0,105,32,1) 100%);
+    padding: 1em;
+    max-width: 400px;
+    margin: auto;
+    margin-top : 10%;
+    z-index: 1000000;
+    color: whitesmoke;
+  }
+
+  #divAccept {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .displayNone{
+    display: none;
+  }
+
+  #rulesTitle {
+    font-family: 'heart';
+    font-size: 2rem;
+  }
+
+  #toRead img {
+    max-width: 100%;
+  }
+
+  @media only screen and (min-device-width : 1024px){
+    #toRead{
+      max-width: 50%;
+      margin-top : 2%;
+    }
+    #toRead img {
+      max-width: 80%;
+    }
+
+    #rulesContent {
+      font-size: 0.7rem;
+    }
+    /* #divAccept {
+      font-size: 10px;    } */
+  }
