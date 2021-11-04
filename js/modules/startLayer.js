@@ -1,13 +1,14 @@
-window.addEventListener("load", startLayer);
+// window.addEventListener("load", startLayer);
 
-function startLayer(){
+
+ export function startLayer(){
     let container = document.getElementById('container');
     container.classList.add('displayNone');
     let rulesBtn = document.createElement('button');
     rulesBtn.setAttribute("id", "accept");
     rulesBtn.classList.add("btn", "btn-warning");
     let rulesImg = document.createElement('div');
-    rulesBtn.setAttribute("id", "image");
+    rulesBtn.setAttribute("id", "startBtn");
 
     let divAccept = document.createElement('div');
     divAccept.setAttribute("id", "divAccept");
@@ -44,6 +45,4 @@ function startLayer(){
     container.classList.remove('displayNone');
     // play();
     });
-
-   
 }

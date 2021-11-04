@@ -1,3 +1,5 @@
+import { startLayer } from "modules/startLayer.js";
+
 const cards = document.querySelectorAll('.card');
 const logNumberOfTry = document.getElementById('try');
 const container = document.getElementById('container');
@@ -7,6 +9,8 @@ var winNumber = 0;
 let firstCard;
 let secondCard;
 
+ // Load start menu
+window.addEventListener("load", startLayer);
 
 function play(){
     numberOfTry = 12;
