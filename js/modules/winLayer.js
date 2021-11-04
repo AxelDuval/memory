@@ -1,5 +1,6 @@
+import {play} from "../main.js";
 
-function winLayer(){
+export function winLayer(){
     let container = document.getElementById('container');
     container.classList.add('displayNone');
     let rulesBtn = document.createElement('button');

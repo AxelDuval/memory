@@ -1,24 +1,34 @@
-import { startLayer } from "modules/startLayer.js";
+import { startLayer } from "./modules/startLayer.js";
+import { winLayer } from "./modules/winLayer.js";
+import { looseLayer } from "./modules/looseLayer.js";
 
-const cards = document.querySelectorAll('.card');
-const logNumberOfTry = document.getElementById('try');
-const container = document.getElementById('container');
-let cardActive = false;
-var numberOfTry = 12;
-var winNumber = 0;
-let firstCard;
-let secondCard;
+
+
+
 
  // Load start menu
 window.addEventListener("load", startLayer);
 
-function play(){
-    numberOfTry = 12;
-    winNumber = 0;
+
+export function play(){
+   
+    let cards = document.querySelectorAll('.card');
+    let logNumberOfTry = document.getElementById('try');
+    let container = document.getElementById('container');
+    let cardActive = false;
+    let firstCard;
+    let secondCard;
+    let numberOfTry = 12;
+    let winNumber = 0;
+
+    // Show the score
+    logNumberOfTry.innerText = `Nombre d'essais restants : ${numberOfTry}`;
+
     randomizeCards();
 
     // Add listener on the user click on cards
     for (let card of cards){
+        card.childNodes[1].classList.remove('active');
         card.addEventListener('click', revealCard);   
     }
 
@@ -42,6 +52,7 @@ function play(){
         }     
 
     // Function to compare the two selected cards
+  
     function checkCards(firstCard, secondCard){
         if(firstCard.getAttribute('data-attribute') === secondCard.getAttribute('data-attribute')){
             firstCard.removeEventListener('click', revealCard);
@@ -49,6 +60,8 @@ function play(){
             winNumber++;
             // If the player have found all the cards, show the win layer
             if (winNumber === (cards.length /2)){
+                numberOfTry = 12;
+                winNumber = 0;
                 winLayer();
             }
         }
@@ -57,8 +70,6 @@ function play(){
             // Prevent the click on other cards before the end of the animation and decrease try
             container.classList.add('disableClick');
             numberOfTry--;
-            logNumberOfTry.innerText = `Nombre d'essais restants : ${numberOfTry}`;
-            
             
             // set a delay before hidding cards
             setTimeout(() => { 
@@ -66,14 +77,17 @@ function play(){
                 secondCard.childNodes[1].classList.remove('active');
                 firstCard.addEventListener('click', revealCard);
                 container.classList.remove('disableClick');
+                console.log('perdu : ' + numberOfTry);
                 // If the number of tries equal 0, the player loose the game
                 if (numberOfTry === 0) {
-                    looseLayer();
                     numberOfTry = 12;
+                    winNumber = 0;
+                    looseLayer();
                 }
 
             }, 1500);    
         }
+        logNumberOfTry.innerText = `Nombre d'essais restants : ${numberOfTry}`;
     }; 
 
     // Display cards in a random order
@@ -87,4 +101,4 @@ function play(){
 
 }
 
-play();
+// play();

@@ -1,5 +1,6 @@
+import {play} from "../main.js";
 
-function looseLayer(){
+export function looseLayer(){
     let container = document.getElementById('container');
     container.classList.add('displayNone');
     let rulesBtn = document.createElement('button');

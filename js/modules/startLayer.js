@@ -1,7 +1,8 @@
 // window.addEventListener("load", startLayer);
-
+import {play} from "../main.js";
 
  export function startLayer(){
+  
     let container = document.getElementById('container');
     container.classList.add('displayNone');
     let rulesBtn = document.createElement('button');
@@ -43,6 +44,7 @@
     rulesBtn.addEventListener('click', function() {
     rules.classList.add('displayNone');
     container.classList.remove('displayNone');
-    // play();
+    
+    play();
     });
 }
