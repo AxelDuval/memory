@@ -30,7 +30,7 @@ function looseLayer(){
     document.body.appendChild(rules);
 
     rulesTitle.innerText = "PerdU";
-    rulesImg.innerHTML = `<img src="/img/loose.gif"/>`;     
+    rulesImg.innerHTML = `<img src="./img/loose.gif"/>`;     
     rulesBtn.innerText = "Rejouer";     
 
     rulesBtn.addEventListener('click', function() {

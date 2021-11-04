@@ -30,7 +30,7 @@ function winLayer(){
     document.body.appendChild(rules);
 
     rulesTitle.innerText = "BravO";
-    rulesImg.innerHTML = `<img src="/img/win.gif"/>`;     
+    rulesImg.innerHTML = `<img src="./img/win.gif"/>`;     
     rulesBtn.innerText = "Rejouer";     
 
     rulesBtn.addEventListener('click', function() {
