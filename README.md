@@ -10,12 +10,9 @@ Spécifications fonctionnelles :
 
 - Quand toutes les paires sont trouvées et donc que toutes les cartes sont face visible le jeu est terminé
 
-
-Bonus :
-
 - Afficher les cartes de manière aléatoire à l’écran
 
-- Rajouter un timer et/ou compteur d'essais à l'application qui donne un temps maximal ou un nombre de coups impartis pour trouver les paires
+- Rajouter un compteur d'essais à l'application qui donne un nombre de coups maximum pour trouver les paires
 
 - Le jeu ne démarre que lorsque l’utilisateur clique sur le bouton démarrer.
 

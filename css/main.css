@@ -100,7 +100,7 @@ textarea {
 
 
    .footer {
-    /* position: absolute; */
+    position: absolute;
     /* position: fixed; */
     margin-bottom: 0px;
     bottom: 0;
@@ -121,20 +121,20 @@ textarea {
   }
 
 
-  @media only screen and (min-device-width : 1024px){
+  @media only screen and (min-device-width : 1200px){
     #container{
-      max-width: 400px;
+      max-width: 80%;
     }
     .navbar, .footer{
       max-height: 12vh;
     }
     .navbar-brand {
       font-family: 'heart';
-      font-size: 1.5rem !important;
+      font-size: 2rem !important;
       padding-top: 0px !important;
     }
     .footer p {
-      font-size: 0.5rem !important;
+      font-size: 1rem !important;
     }
   }
 
