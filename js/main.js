@@ -19,7 +19,7 @@ export function play(){
     let winNumber = 0;
 
     // Show the score
-    logNumberOfTry.innerText = `Nombre d'essais restants : ${numberOfTry}`;
+    logNumberOfTry.innerText = `Nombre d'essais restants : ${numberOfTry} `;
 
     randomizeCards();
 
