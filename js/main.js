@@ -1,15 +1,12 @@
+ // Import the différents layer for display Start/Win/loose messages
 import { startLayer } from "./modules/startLayer.js";
 import { winLayer } from "./modules/winLayer.js";
 import { looseLayer } from "./modules/looseLayer.js";
 
-
-
-
-
  // Load start menu
 window.addEventListener("load", startLayer);
 
-
+ // Main Game function
 export function play(){
    
     let cards = document.querySelectorAll('.card');

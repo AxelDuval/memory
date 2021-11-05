@@ -39,7 +39,6 @@
 }
 
 .face {
-    /* position: absolute; */
     width: 100%;
     -webkit-backface-visibility: hidden;
     display: flex;
