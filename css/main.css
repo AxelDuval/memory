@@ -97,11 +97,14 @@ textarea {
 }
 
 
-
+body {
+  background-image: url("../img/background/04.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
 
    .footer {
     position: absolute;
-    /* position: fixed; */
     margin-bottom: 0px;
     bottom: 0;
     width: 100%;
