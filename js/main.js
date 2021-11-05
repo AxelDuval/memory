@@ -77,7 +77,6 @@ export function play(){
                 secondCard.childNodes[1].classList.remove('active');
                 firstCard.addEventListener('click', revealCard);
                 container.classList.remove('disableClick');
-                console.log('perdu : ' + numberOfTry);
                 // If the number of tries equal 0, the player loose the game
                 if (numberOfTry === 0) {
                     numberOfTry = 12;
@@ -101,4 +100,4 @@ export function play(){
 
 }
 
-// play();
+

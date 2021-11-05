@@ -37,7 +37,7 @@ import {play} from "../main.js";
     document.body.appendChild(rules);
 
     rulesTitle.innerText = "Bienvenue Sur le jeu memOry";
-    rulesContent.innerText = "Le but du jeu jeu est de trouver les différentes paires en 12 essais !"; 
+    rulesContent.innerText = "Le but du jeu est de trouver les différentes paires en 12 essais !"; 
     rulesImg.innerHTML = `<img src="./img/start_game.gif"/>`;     
     rulesBtn.innerText = "C'est parti !";     
 
